@@ -3,7 +3,7 @@ package com.nttdata.steps;
 import com.nttdata.screens.LoginScreen;
 import com.nttdata.screens.SearchDetailsScreen;
 import com.nttdata.screens.SearchScreen;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.annotations.Step;
 
 public class AirbnbSearchSteps {
 

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginScreen extends PageObject {
@@ -15,13 +16,9 @@ public class LoginScreen extends PageObject {
 
     public void clickClose(){
 
-        WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(btnClose));
-        getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         btnClose.click();
-
-
-
     }
 }

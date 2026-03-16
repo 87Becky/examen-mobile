@@ -1,7 +1,6 @@
 package com.nttdata.steps;
 
 import com.nttdata.screens.SauceLoginScreen;
-import io.restassured.internal.common.assertion.Assertion;
 import org.junit.Assert;
 
 public class SuaceLabsLoginSteps {
@@ -24,6 +23,8 @@ public class SuaceLabsLoginSteps {
     public void validacionLogin() {
         Assert.assertEquals("PRODUCTS",login.getTitulo() );
         Assert.assertTrue(login.getCountElements()>1);
-
+    }
+    public void validarPantallaLogin() {
+        Assert.assertTrue(login.validarPantallaLogin());
     }
 }
