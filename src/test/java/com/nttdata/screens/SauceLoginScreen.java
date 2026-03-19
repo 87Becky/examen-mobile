@@ -47,6 +47,7 @@ public class SauceLoginScreen extends PageObject {
     }
 
     public void ingresar() {
+
         btnLogin.click();
     }
 
