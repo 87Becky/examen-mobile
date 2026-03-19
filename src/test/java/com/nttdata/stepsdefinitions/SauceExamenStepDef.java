@@ -39,7 +39,6 @@ public class SauceExamenStepDef {
 
     @Then("valido el carrito de compra actualice correctamente")
     public void validoElCarritoDeCompraActualiceCorrectamente() {
-        // Ya validado en SauceLabsCatalogSteps
-        System.out.println("✅ Carrito validado correctamente");
+        System.out.println("Carrito validado correctamente");
     }
 }
